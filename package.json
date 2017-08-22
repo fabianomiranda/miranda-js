@@ -1,7 +1,27 @@
-{ 
+{
   "name": "miranda-js",
   "description": "A jQuery plugin HTML + JSON",
   "version": "1.0.0",
-  "email": "fabianorlx2@gmail.com",
-  "url": "http://mirandajs.fabianomiranda.com.br"
+  "keywords": [
+    "json",
+    "parse",
+    "grid",
+    "jquery-plugin"
+  ],
+  "author": {
+    "name": "Fabiano Miranda",
+    "url": "http://www.fabianomiranda.com.br",
+    "email": "fabianorlx2@gmail.com"
+  },
+  "main": "jquery.miranda.js",
+  "license": "MIT",
+  "homepage": "http://www.fabianomiranda.com/miranda-js",
+  "demo": "http://www.fabianomiranda.com/miranda-js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fabiano-miranda/miranda-js.git"
+  },
+  "dependencies": {
+    "jquery": ">=1.3.2"
+  }
 }
