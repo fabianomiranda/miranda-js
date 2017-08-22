@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+    * {
+        box-sizing: border-box;
+    }
+    .row::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+    [class*="col-"] {
+        float: left;
+        padding: 15px;
+        border: solid 1px #e4e4e4;
+    }
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+    </style>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="js/jquery.miranda.js"></script>
+<script>
+    $(function(){
+        var arr = {"pais":[{"nome": "João", "sobrenome": "Silva", "idade": "50"}, {"nome": "Pedro", "sobrenome": "Santos", "idade": "22"}]};
+        var arr2 = [{"nome": "João", "sobrenome": "Silva", "idade": "50"}, {"nome": "Pedro", "sobrenome": "Santos", "idade": "22"}];
+        var arr3 = {"nome": "Pedro", "sobrenome": "Santos", "idade": "22"};
+        var arr4 = {"pais":[{"nome": "João", "sobrenome": "Silva", "idade": "50"}, {"nome": "Pedro", "sobrenome": "Santos", "idade": "22"}], "filhos":[{"nome": "Joãozinho", "sobrenome": "Silva", "idade": "11"}, {"nome": "Pedrinho", "sobrenome": "Santos", "idade": "5"}]};
+        var linkAjax = 'json-data/data1.json';
+        $("#grid").mirandajs(linkAjax, {
+            containers:['grid', 'grid2'],
+            jsonNode:['pais', 'filhos'],
+            effect: 'slideDown',
+            delay: 2000
+        });
+    });
+</script>
+</head>
+<body>
+<div id="grid" style="display: none;">
+    <div class="row">
+        <div class="col-4">[[nome]]</div>
+        <div class="col-4">[[sobrenome]]</div>
+        <div class="col-4">[[idade]]</div>
+    </div>
+</div>
+
+<div id="grid2" style="display: none;">
+    <div class="row">
+        <div class="col-4">[[nome]]</div>
+        <div class="col-4">[[sobrenome]]</div>
+        <div class="col-4">[[idade]]</div>
+    </div>
+</div>
+
+
+</body>
+</html>
