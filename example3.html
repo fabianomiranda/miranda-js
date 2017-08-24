@@ -8,15 +8,22 @@
     <script src="js/jquery.miranda.js"></script>
 <script>
     $( document ).ready(function() {
-        var data = {"name": "Fabiano", "lastname": "Miranda"};
-        $("#boxPeople").mirandajs(data);
+        var data = {
+            "people": {
+                "name": "Fabiano",
+                "lastname": "Miranda"
+            }
+        };
+        $("#boxPeople").mirandajs(data, {
+            jsonNode:['people']
+        });
     });
 </script>
 </head>
 <body>
 <div id="boxPeople" style="display: none;">
-        <h1>[[name]]</h1>
-        <h2> [[lastname]]</h2>
+        <label><strong>Name:</strong> [[name]]</label><br>
+        <label><strong>Last name:</strong> [[lastname]]</label>
 </div>
 
 </body>

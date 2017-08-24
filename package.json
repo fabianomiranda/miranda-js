@@ -22,6 +22,6 @@
     "url": "https://github.com/fabiano-miranda/miranda-js.git"
   },
   "dependencies": {
-    "jquery": ">=1.3.2"
+    "jquery": ">=1.7"
   }
 }

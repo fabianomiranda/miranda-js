@@ -1,14 +1,13 @@
-
 $.fn.mirandajs = function(data, options) {
     // configuração padrão
     var settings = $.extend({
             jsonNode:[''],
             containers:[this.attr('id')],
             effect:'show',
-            delay:0,
-            nodeDelay:500,
+            delay:5000,
             ajaxMethod:'GET',
-            postData:{}
+            postData:{},
+            noCache: false
     }, options);
 
     /* Tratamento de erros na passagem de parâmetros */
@@ -46,6 +45,7 @@ $.fn.mirandajs = function(data, options) {
         if((JSON_NODE_INDEX+1) < JSON_NODE_TOTAL){
             JSON_NODE_INDEX++;
             HTML_OBJ = $('#'+settings.containers[JSON_NODE_INDEX]);
+            HTML_BASE = HTML_OBJ.html();
             setTimeout(function(){
                 mirandaParse(JSON, settings.jsonNode[JSON_NODE_INDEX]);
             }, settings.nodeDelay);
@@ -77,7 +77,14 @@ $.fn.mirandajs = function(data, options) {
     var JSON_NODE_INDEX = 0;
     var JSON_NODE_TOTAL = settings.jsonNode.length;
 
-    if(mirandaIsURL(data)){
+    if(typeof data == 'string'){
+        if(settings.noCache){
+            var concatUrl = '?';
+            if(data.indexOf(concatUrl) != -1) {
+                concatUrl = '&';
+            }
+            data += concatUrl + 'nocache=' + $.now();
+        }
         if(settings.ajaxMethod.toUpperCase() == 'GET'){
             $.get( data, function( data ) {
                 mirandaParse(data, settings.jsonNode[JSON_NODE_INDEX]);

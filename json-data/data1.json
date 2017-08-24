@@ -1,26 +1,18 @@
 {
-    "pais":[
-        {
-            "nome":"João",
-            "sobrenome":"Silva",
-            "idade":"50"
-        },
-        {
-            "nome":"Pedro",
-            "sobrenome":"Santos",
-            "idade":"22"
-        }
-    ],
-    "filhos":[
-        {
-            "nome":"Joãozinho",
-            "sobrenome":"Silva",
-            "idade":"11"
-        },
-        {
-            "nome":"Pedrinho",
-            "sobrenome":"Santos",
-            "idade":"5"
-        }
-    ]
+    "people": [{
+        "name": "Fabiano",
+        "lastname": "Miranda",
+        "office": "Server-side Programmer"
+    }, {
+        "name": "Elder",
+        "lastname": "Beat",
+        "office": "Front-side Programmer"
+    }],
+    "company": [{
+        "name": "Original media",
+        "country": "Brasil"
+    }, {
+        "name": "Apple",
+        "country": "United States"
+    }]
 }
