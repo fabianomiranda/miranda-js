@@ -38,7 +38,7 @@
             $( "#btSend" ).click(function(event) {
                 event.preventDefault();
                 var postData = $( "form" ).serialize();
-                var linkAjax = 'json-data/post-data.php?name=1';
+                var linkAjax = 'json-data/post-data.php';
                 $("#peopleWork").mirandajs(linkAjax, {
                     effect: 'fadeIn',
                     delay: 2000,
