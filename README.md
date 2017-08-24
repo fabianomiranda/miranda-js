@@ -4,7 +4,7 @@ A jquery plugin for easy integration between JSON and HTML. Maintaining harmony 
 
 - jQuery support: 1.7+
 
-For **credits**, see:
+For **credits and examples**, see:
 http://www.fabianomiranda.com.br/miranda-js/
 
 For **downloads**, see:
@@ -33,7 +33,7 @@ $("#box").mirandajs(list);
 </script>
 ```
 
-### Object list integration
+### Simple Object list integration
 
 ```
 <div id="box">
