@@ -5,6 +5,7 @@ $.fn.mirandajs = function(data, options) {
             containers:[this.attr('id')],
             effect:'show',
             delay:5000,
+            nodeDelay:0,
             ajaxMethod:'GET',
             postData:{},
             noCache: false
