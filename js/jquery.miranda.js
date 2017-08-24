@@ -4,8 +4,8 @@ $.fn.mirandajs = function(data, options) {
             jsonNode:[''],
             containers:[this.attr('id')],
             effect:'show',
-            delay:5000,
-            nodeDelay:0,
+            delay:1000,
+            nodeDelay:500,
             ajaxMethod:'GET',
             postData:{},
             noCache: false
