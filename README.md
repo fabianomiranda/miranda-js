@@ -49,4 +49,4 @@ $("#box").mirandajs(list);
 
 ### Credits
 
-- Concept and development by [Fabiano Miranda](http://www.fabianomiranda.com.br) for [Original Media](http://www.originalmedia.com.br).
+- Concept and development by [Fabiano Miranda](http://www.fabianomiranda.com.br).
