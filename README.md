@@ -5,10 +5,10 @@ A jquery plugin for easy integration between JSON and HTML. Maintaining harmony 
 - jQuery support: 1.7+
 
 For **credits and examples**, see:
-http://www.fabianomiranda.com.br/miranda-js/
+http://www.fabianomiranda.com/miranda-js/
 
 For **downloads**, see:
-http://www.fabianomiranda.com.br/miranda-js/miranda-js.zip
+http://www.fabianomiranda.com/miranda-js/miranda-js.zip
 
 ## Documentation
 
